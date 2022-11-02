@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-marker preset="hiro">
+        <a-entity
+          position="0 0.5 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="./models/dragon_flying/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+
+      <a-plane height="3" width="3" color="grey" position="-2 1 0"></a-plane>
+    </a-scene>
+  </body>
+</html>
